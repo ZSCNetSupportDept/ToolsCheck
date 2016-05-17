@@ -1,0 +1,48 @@
+html,body{
+	background-color: #FBF9FE;
+	font-family: "microsoft yahei";
+}
+.hide{display: none;}
+.fix_float{clear: both;}
+
+.page{
+	width: 92%;
+	max-width: 800px;
+	margin: 10px auto 50px auto;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch
+}
+.head{padding: 2em 0}
+.title{
+	text-align: center;
+	font-size: 34px;
+	color: #3CC51F;
+	font-weight: 400;
+	margin: 0 15%
+}
+.desc {
+	text-align: center;
+	color: #888;
+	font-size: 14px
+}
+
+.bottom{
+	padding: 1em 0 1.5em 0;
+	background-color: #ECECEC;
+	text-align: center;
+}
+.bottom a{
+	color: #727F80;
+	text-decoration: none;
+}
+.bottom p{
+	width: 100%;
+	color: #727F80;
+	padding: 0.6em 0 0 0;
+}
+.bottom .mark{
+	color: #61749B;
+}
+.bottom .small{
+	font-size: 10px;
+}
