@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang = "en" >
+<head >
+	<meta charset = "UTF-8" >
+	<meta name = "viewport" content = "width=device-width,initial-scale=1,user-scalable=0" >
+	<title >签到</title >
+	<link rel = "stylesheet" type = "text/css"
+	      href = "http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" >
+	<link rel = "stylesheet" href = "http://res.wx.qq.com/open/libs/weui/0.4.2/weui.css" />
+	<link rel="stylesheet" href="lib/common.css">
+	<link rel = "stylesheet" href = "lib/sign_in.css" >
+</head >
+<body class="page">
+<header class="head desc">
+	<h1 class="title">今日签到</h1 >
+	<p >少年，喝杯JS压压惊吧╰(￣▽￣)╯</p >
+</header >
+<a href = "javascript:;" class = "weui_btn weui_btn_mini weui_btn_default return_home" >返回主页</a >
+<article >
+	<form >
+		<!-- personal information -->
+		<div class = "weui_cells_title" >值班信息</div >
+		<div class = "weui_cells" >
+			<div class = "weui_cell weui_cell_select weui_select_after" >
+				<div class = "weui_cell_hd" >
+					<label for = "select" class = "weui_label" >值班片区</label >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<select class = "weui_select" name = "select1" id = "select" >
+						<!-- 这边需要获取后台数据，自动帮用户获取值班信息 -->
+						<option value = "1" >香晖AB</option >
+						<option value = "2" >香晖CD</option >
+						<option value = "3" >凤翔</option >
+						<option value = "4" >北门</option >
+						<option value = "5" >东门</option >
+						<option value = "6" >岐头</option >
+					</select >
+				</div >
+			</div >
+		</div >
+		<!-- tools information -->
+		<!--
+			t1:  水晶头
+			t2:  网线
+			t3:  网钳
+			t4:  剥线器
+			t5:  交换机
+			t6:  测线器
+			t7:  压线器
+			t8:  螺丝刀
+			t9:  端口模块
+		-->
+		<div class = "weui_cells_title" >工具良好状况</div >
+		<div class = "weui_cells weui_cells_checkbox" >
+			<label class = "weui_cell weui_check_label" for = "t1" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1"  class = "weui_check" id = "t1" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >水晶头</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t2" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t2" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >网线</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t3" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t3" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >网钳</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t4" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t4" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >剥线器</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t5" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t5" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >交换机</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t6" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t6" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >测线器</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t7" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t7" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >压线器</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t8" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t8" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >螺丝刀</p >
+				</div >
+			</label >
+			<label class = "weui_cell weui_check_label" for = "t9" >
+				<div class = "weui_cell_hd" >
+					<input type = "checkbox" name = "checkbox1" class = "weui_check" id = "t9" >
+					<i class = "weui_icon_checked" ></i >
+				</div >
+				<div class = "weui_cell_bd weui_cell_primary" >
+					<p >端口模块</p >
+				</div >
+			</label >
+		</div >
+		<!-- achieve the sign -->
+		<!--
+		class:
+		     sign_in: 完成签到功能的div
+		     achieve: 完成签到按钮
+		     where  : 值班片区信息
+		     tool_no: 未选择工具信息
+		     hide   : 控制信息确认窗口的显示与隐藏
+		id:
+		     cancle : 信息确认窗口的取消
+		     confirm: 信息确认窗口的确定
+		 -->
+		<div class = "sign_in" >
+			<a href = "javascript:;" class = "weui_btn weui_btn_primary achieve" >完成签到</a >
+			<div class = "weui_dialog_confirm hide">
+				<div class = "weui_mask" ></div >
+				<div class = "weui_dialog" >
+					<div class = "weui_dialog_hd" >
+						<strong class = "weui_dialog_title" >信息确认</strong >
+					</div >
+					<div class = "weui_dialog_bd" >
+						<p >值班片区：<span id = "where" >获取失败</span ></p >
+						<p >未选择的工具：<span id = "tool_no" >获取失败</span ></p >
+					</div >
+					<div class = "weui_dialog_ft" >
+						<a href = "javascript:;" class = "weui_btn_dialog default" id="cancle">取消</a >
+						<a href = "javascript:;" class = "weui_btn_dialog primary" id="confirm">确定</a >
+					</div >
+				</div >
+			</div >
+		</div >
+	</form >
+</article >
+<footer class="bottom">
+	<i class="weui_icon_info"></i>
+	<p class="mark">电子科技大学中山学院网络维护科</p>
+	<p >© 刘越 2016 and Background by Sola</p>
+	<p class="small">architecture:v2 dev |  updated:1459443481125</p>
+</footer>
+</body >
+</html >
