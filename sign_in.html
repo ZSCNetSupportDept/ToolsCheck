@@ -18,6 +18,7 @@
 <a href="javascript:NMFunc.route('home.html');" class = "weui_btn weui_btn_mini weui_btn_default return_home" >返回主页</a >
 <article >
 	<form >
+        <input type="hidden" id="token" />
 		<!-- personal information -->
 		<div class = "weui_cells_title" >值班信息</div >
 		<div class = "weui_cells" >
@@ -157,6 +158,16 @@
 					<div class = "weui_dialog_bd" >
 						<p >值班片区：<span id = "where" >获取失败</span ></p >
 						<p >未选择的工具：<span id = "tool_no" >获取失败</span ></p >
+                        <div class="weui_cells weui_cells_form">
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_lable">异常说明　</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input id="input" class="weui_input" type="text" placeholder="请输入说明，必填">
+                                </div>
+                            </div>
+                        </div>
 					</div >
 					<div class = "weui_dialog_ft" >
 						<a href = "javascript:;" class = "weui_btn_dialog default" id="cancle">取消</a >
