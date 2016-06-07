@@ -10,13 +10,13 @@
 	<link rel="stylesheet" href="lib/common.css">
 	<link rel = "stylesheet" href = "lib/sign_in.css" >
 </head >
-<body class="page">
+<body>
 <header class="head desc">
 	<h1 class="title">今日签到</h1 >
-	<p >少年，XiaoXin别漏了工具啊╰(￣▽￣)╯</p >
+	<p >Lunzi大佬，别漏了工具啊╰(￣▽￣)╯</p >
 </header >
-<a href="javascript:NMFunc.route('home.html');" class = "weui_btn weui_btn_mini weui_btn_default return_home" >返回主页</a >
-<article >
+<article class="page">
+	<a href="javascript:NMFunc.route('home.html');" class = "weui_btn weui_btn_mini weui_btn_default return_home" >返回主页</a >
 	<form >
         <input type="hidden" id="token" />
 		<!-- personal information -->
@@ -28,7 +28,6 @@
 				</div >
 				<div class = "weui_cell_bd weui_cell_primary" >
 					<select class = "weui_select" name = "select1" id = "select" >
-						<!-- 这边需要获取后台数据，自动帮用户获取值班信息 -->
 						<option value = "1" >香晖AB</option >
 						<option value = "2" >香晖CD</option >
 						<option value = "3" >凤翔</option >
@@ -39,7 +38,7 @@
 				</div >
 			</div >
 		</div >
-		<!-- tools information -->
+		<!-- tools status information -->
 		<!--
 			t1:  水晶头
 			t2:  网线
@@ -50,6 +49,8 @@
 			t7:  压线器
 			t8:  螺丝刀
 			t9:  端口模块
+			t10: 机房钥匙
+			t11: 移动机柜钥匙
 		-->
 		<div class = "weui_cells_title" >工具良好状况</div >
 		<div class = "weui_cells weui_cells_checkbox" >
@@ -199,7 +200,7 @@
 <footer class="bottom">
 	<i class="weui_icon_info"></i>
 	<p class="mark">电子科技大学中山学院网络维护科</p>
-	<p >Developed by 轮子 and 晓新</p>
+	<p >Developed by Lunzi and XX</p>
 </footer>
 <script>
 	window.allowDesktop = 1;

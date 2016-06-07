@@ -1,6 +1,7 @@
 .return_home{
 	width: 10em;
-	margin: 1.5em 0 0 .8em;
+	height:2em;
+	margin-left:.8em;
 }
 
 .achieve{
@@ -10,4 +11,8 @@
 .sign_status{
 	padding-top:3em;
 	text-align: center;
+}
+
+.sign_status .return_home{
+	margin-top: 1.5em;
 }
