@@ -11,12 +11,18 @@
 	<link rel = "stylesheet" href = "lib/sign_in.css" >
 </head >
 <body >
+<input type="hidden" id="token" />
 <div class="sign_status page">
 	<i class="weui_icon_safe weui_icon_safe_warn"></i>
 	<h1 class="title" style="color: #F76260;">今日已签过到</h1>
 	<p>今日已签过到，如有异常请联系Sola进行处理</p>
 	<a href = "javascript:NMFunc.route('home.html');" class = "weui_btn weui_btn_mini weui_btn_default return_home" >返回主页</a >
 </div>
+<script src="lib/functions.js"></script>
+<script>
+	SToken.init(NMFunc.getURLParam('token'), 'token');
+	window.allowDesktop = 1;
+</script>
 <footer class="bottom weui_extra_area">
 	<i class="weui_icon_info"></i>
 	<p class="mark">电子科技大学中山学院网络维护科</p>
